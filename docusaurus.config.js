@@ -148,11 +148,11 @@ const config = {
             items: [
               {
                 label: '文档首页',
-                to: '/docs/introduction',
+                to: '/docs/intro',
               },
               {
                 label: 'Open Api',
-                to: '/docs/introduction',
+                to: '/docs/administrator_guide/studio/openapi',
               },
             ],
           },
@@ -160,7 +160,7 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: '讨论',
+                label: 'Discussions',
                 href: 'https://github.com/DataLinkDC/dlink/discussions',
               },
               {
@@ -207,7 +207,7 @@ const config = {
   //      '@docusaurus/plugin-content-docs',
   //      {
   //        id: 'download',
-  //        path: 'download',
+  //        path: '/docs/deploy/download',
   //        routeBasePath: 'download',
   //        editUrl: ({locale, versionDocsDirPath, docPath}) => {
   //          if (locale !== 'zh') {
