@@ -1,7 +1,7 @@
 ---
-position: 3
+sidebar_position: 1
 id: job_manage
-title: job_manage
+title: 作业管理
 ---
 
 

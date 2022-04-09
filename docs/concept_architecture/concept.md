@@ -1,5 +1,5 @@
 ---
-position : 2
+sidebar_position: 2
 id: concept
 title: 基本概念
 ---

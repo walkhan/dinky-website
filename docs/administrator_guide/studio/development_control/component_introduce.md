@@ -1,7 +1,7 @@
 ---
-position: 1
+sidebar_position: 2
 id: component_introduce
-title: 集群管理
+title: 方言介绍
 ---
 
 

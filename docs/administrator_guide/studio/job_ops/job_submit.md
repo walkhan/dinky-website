@@ -1,6 +1,6 @@
 ---
-position: 4
+sidebar_position: 3
 id: job_submit
-title: job_submit
+title: 作业提交
 ---
 

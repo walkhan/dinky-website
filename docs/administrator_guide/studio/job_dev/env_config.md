@@ -1,7 +1,7 @@
 ---
-position: 1
+sidebar_position: 2
 id: env_config
-title: env_config
+title: 环境配置
 ---
 
 

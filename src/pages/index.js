@@ -37,7 +37,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             style={{ backgroundColor: '#42b983', borderRadius: '2rem', border: '1px solid #42b983' }}
             to="/docs/intro">
-            Quick Started
+            Quick Start
           </Link>
         </div>
       </div>

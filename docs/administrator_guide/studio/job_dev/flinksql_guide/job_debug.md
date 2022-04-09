@@ -1,7 +1,7 @@
 ---
-position: 1
+sidebar_position: 4
 id: job_debug
-title: job_debug
+title: 作业调试
 ---
 
 

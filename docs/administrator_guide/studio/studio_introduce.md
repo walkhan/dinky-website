@@ -1,5 +1,5 @@
 ---
-position: 1
+sidebar_position: 6
 id: studio_introduce
 title: studio_introduce
 ---
