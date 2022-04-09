@@ -101,16 +101,16 @@ const config = {
             ],
           },
           {
-            to: '/docs/quick_start/download',
+            to: '/docs/deploy/download',
             position: 'right',
             label: 'Download',
             activeBaseRegex: `/download/`,
           },
           {
-            to: '/community/how-to-contribute',
+            to: '/docs/developer_guide/debug',
             position: 'right',
             label: 'Development',
-            activeBaseRegex: `/community/`,
+            activeBaseRegex: `/debug/`,
           },
           {
             type: 'localeDropdown',
