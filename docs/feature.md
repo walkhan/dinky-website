@@ -1,7 +1,7 @@
 ---
-position : 6
+sidebar_position: 10
 id: feature
-title: Feature
+title: 功能
 ---
 
 

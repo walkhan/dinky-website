@@ -1,3 +1,9 @@
+---
+position : 2
+id: concept
+title: 基本概念
+---
+
 <big>**JobManager**</big>
 
 JobManager 作为 Dinky 的作业管理的统一入口，负责 Flink 的各种作业执行方式及其他功能的调度。

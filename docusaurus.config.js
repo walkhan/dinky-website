@@ -70,12 +70,12 @@ const config = {
           {
             to: '/',
             position: 'right',
-            label: 'HOME',
+            label: 'Home',
             activeBaseRegex: `^/$`,
           },
           {
             position: 'right',
-            label: 'DOCS',
+            label: 'Docs',
             to: "/docs/intro",
             items: [
               {
@@ -95,7 +95,7 @@ const config = {
                 to: "/docs/0.11.0/user_guide/quick_start",
               },
               {
-                label: "All versions",
+                label: "All Versions",
                 to: "/versions/",
               },
             ],
@@ -131,11 +131,11 @@ const config = {
             items: [
               {
                 label: '文档首页',
-                to: '/docs/intro',
+                to: '/docs/introduction',
               },
               {
                 label: 'Open Api',
-                to: '/docs/intro',
+                to: '/docs/introduction',
               },
             ],
           },
