@@ -36,15 +36,16 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          sidebarCollapsible: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/walkhan/dinky-website/tree/walkhan/master/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+//        blog: {
+//          showReadingTime: true,
+//          // Please change this to your repo.
+//          editUrl:
+//            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+//        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -79,20 +80,12 @@ const config = {
             to: "/docs/intro",
             items: [
               {
-                label: "Next",
-                to: "/docs/next/introduction",
+                label: "master",
+                to: "/docs/master/intro",
               },
               {
-                label: "1.0.0",
-                to: "/docs/introduction",
-              },
-              {
-                label: "0.12.0",
-                to: "/docs/0.12.0/introduction",
-              },
-              {
-                label: "0.11.0",
-                to: "/docs/0.11.0/user_guide/quick_start",
+                label: "0.6.0",
+                to: "/docs/intro",
               },
               {
                 label: "All Versions",
@@ -201,24 +194,24 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-  //  plugins: [
-  //    'docusaurus-plugin-less',
-  //    [
-  //      '@docusaurus/plugin-content-docs',
-  //      {
-  //        id: 'download',
-  //        path: '/docs/deploy/download',
-  //        routeBasePath: 'download',
-  //        editUrl: ({locale, versionDocsDirPath, docPath}) => {
-  //          if (locale !== 'zh') {
-  //            return `https://github.com/apache/incubator-inlong-website/edit/master/i18n/${locale}/${docPath}`;
-  //          }
-  //          return `https://github.com/apache/incubator-inlong-website/edit/master/${versionDocsDirPath}/${docPath}`;
-  //        },
-  //        sidebarPath: require.resolve('./sidebarsDevelopment.js'),
-  //      },
-  //    ],
-  //  ]
+    plugins: [
+      'docusaurus-plugin-less',
+      [
+        '@docusaurus/plugin-content-docs',
+        {
+          id: 'download',
+          path: 'download',
+          routeBasePath: 'download',
+          editUrl: ({locale, versionDocsDirPath, docPath}) => {
+            if (locale !== 'en') {
+              return `https://github.com/walkhan/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
+            }
+            return `https://github.com/walkhan/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
+          },
+          sidebarPath: require.resolve('./sidebarsDevelopment.js'),
+        },
+      ],
+    ]
 };
 
 module.exports = config;
