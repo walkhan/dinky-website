@@ -1,7 +1,7 @@
 ---
-position: 2
+sidebar_position: 1
 id: integrate
-title: integrate
+title: 集成
 ---
 
 

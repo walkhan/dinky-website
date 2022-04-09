@@ -1,7 +1,7 @@
 ---
-position: 1
+sidebar_position: 3
 id: flinksql_job_submit
-title: flinksql_job_submit
+title: 作业提交
 ---
 
 

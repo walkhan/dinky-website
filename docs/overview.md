@@ -1,7 +1,7 @@
 ---
-sidebar_position: 8
+sidebar_position: 5
 id: overview
-title: 概述
+title: Dinky 概览
 ---
 
 

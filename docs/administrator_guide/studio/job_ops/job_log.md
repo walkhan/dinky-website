@@ -1,7 +1,7 @@
 ---
-position: 2
+sidebar_position: 4
 id: job_log
-title: job_log
+title: 作业日志
 ---
 
 

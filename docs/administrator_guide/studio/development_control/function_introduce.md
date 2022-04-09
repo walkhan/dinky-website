@@ -1,7 +1,7 @@
 ---
-position: 1
+sidebar_position: 1
 id: function_introduce
-title: 基本介绍
+title: 功能介绍
 ---
 
 
