@@ -101,7 +101,7 @@ const config = {
             ],
           },
           {
-            to: '/download/main',
+            to: '/docs/quick_start/download',
             position: 'right',
             label: 'Download',
             activeBaseRegex: `/download/`,
