@@ -72,6 +72,7 @@ const config = {
             to: '/',
             position: 'right',
             label: '主页',
+            title: '主页',
             activeBaseRegex: `^/$`,
           },
           {
@@ -80,11 +81,11 @@ const config = {
             to: "/docs/intro",
             items: [
               {
-                label: "master",
-                to: "/docs/master/intro",
+                label: "Next",
+                to: "/docs/next/intro",
               },
               {
-                label: "0.6.0",
+                label: "0.6",
                 to: "/docs/intro",
               },
               {
@@ -114,7 +115,7 @@ const config = {
               },
               {
                 label: "远程调试",
-                to: "/docs/docs/developer_guide/remote_debug",
+                to: "/docs/developer_guide/remote_debug",
               },
               {
                 label: "debug",

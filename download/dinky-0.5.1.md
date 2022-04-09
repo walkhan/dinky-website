@@ -1,5 +1,5 @@
 ---
-position : 3
+sidebar_position: 4
 id: dinky-0.5.1
 title: Dinky-0.5.1
 ---

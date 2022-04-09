@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑 <head />">
+      description="为 Apache Flink 而生，让 Flink SQL 纵享丝滑 <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
