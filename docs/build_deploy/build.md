@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 id: build
 title: 编译
 ---

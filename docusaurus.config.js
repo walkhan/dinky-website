@@ -70,12 +70,12 @@ const config = {
           {
             to: '/',
             position: 'right',
-            label: 'Home',
+            label: '主页',
             activeBaseRegex: `^/$`,
           },
           {
             position: 'right',
-            label: 'Docs',
+            label: '文档',
             to: "/docs/intro",
             items: [
               {
@@ -101,16 +101,33 @@ const config = {
             ],
           },
           {
-            to: '/docs/deploy/download',
+            to: '/download/download',
             position: 'right',
-            label: 'Download',
+            label: '下载',
             activeBaseRegex: `/download/`,
           },
           {
             to: '/docs/developer_guide/debug',
             position: 'right',
-            label: 'Development',
-            activeBaseRegex: `/debug/`,
+            label: '开发者指南',
+            items: [
+              {
+                label: "如何参与",
+                to: "/docs/developer_guide/contribution/how_contribute",
+              },
+              {
+                label: "本地调试",
+                to: "/docs/developer_guide/local_debug",
+              },
+              {
+                label: "远程调试",
+                to: "/docs/docs/developer_guide/remote_debug",
+              },
+              {
+                label: "debug",
+                to: "/docs/developer_guide/debug",
+              },
+            ],
           },
           {
             type: 'localeDropdown',
