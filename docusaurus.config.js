@@ -2,10 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 
-const path = require('path');
-const versions = require('./versions.json');
-
-
+const DefaultLocale = 'zh-CN';
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -13,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Dinky',
-  tagline: 'Dinky 为 Apache Flink 而生，让 Flink SQL 纵享丝滑',
+  tagline: '为 Apache Flink 而生，让 Flink SQL 纵享丝滑',
   url: 'http://www.dlink.top/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -22,7 +19,7 @@ const config = {
   organizationName: 'DataLinkDC', // Usually your GitHub org/user name.
   projectName: 'dinky', // Usually your repo name.
   i18n: {
-    defaultLocale: 'zh-CN',
+    defaultLocale: DefaultLocale,
     locales: ['zh-CN', 'en'],
     localeConfigs: {
      'en': {
@@ -37,7 +34,7 @@ const config = {
   },
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -45,7 +42,14 @@ const config = {
           sidebarCollapsible: true,
           // Please change this to your repo.
           editLocalizedFiles: true,
-          editUrl: 'https://github.com/walkhan/dinky-website/tree/walkhan/master/docs/',
+          // highlight-start
+          editUrl: ({locale, versionDocsDirPath, docPath}) => {
+            if (locale !== DefaultLocale) {
+              return `https://github.com/walkhan/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
+            }
+            return `https://github.com/walkhan/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
+          },
+          // highlight-end
         },
 //        blog: {
 //          showReadingTime: true,
@@ -182,10 +186,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/DataLinkDC/dlink',
               },
-              {
-                label: '用户案例',
-                to: '/blog',
-              },
+              // {
+              //   label: '用户案例',
+              //   to: '/blog',
+              // },
          
             ],
           },
@@ -212,7 +216,7 @@ const config = {
           path: 'download',
           routeBasePath: 'download',
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            if (locale !== 'en') {
+            if (locale !== DefaultLocale) {
               return `https://github.com/walkhan/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
             }
             return `https://github.com/walkhan/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
