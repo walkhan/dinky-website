@@ -14,8 +14,8 @@
         "nextLink": "/docs/next/intro",
         "version": [
           {
-            "title": "0.6",
-            "link": "/docs/intro",
+            "title": "0.6.1",
+            "link": "/versioned_docs/version-0.6.1/intro",
             "releaseUrl": "https://github.com/DataLinkDC/dlink/releases/download/0.6.1/dlink-release-0.6.1.tar.gz"
           }
         ]
@@ -37,8 +37,8 @@
         "nextLink": "/docs/next/intro",
         "version": [
           {
-            "title": "0.6",
-            "link": "/docs/intro",
+            "title": "0.6.1",
+            "link": "/versioned_docs/version-0.6.1/intro",
             "releaseUrl": "https://github.com/DataLinkDC/dlink/releases/download/0.6.1/dlink-release-0.6.1.tar.gz"
           }
         ]

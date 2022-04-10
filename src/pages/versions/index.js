@@ -11,7 +11,7 @@ export default function() {
     const [p1Animation, setP1Animation] = useState(false);
     const [p2Animation, setP2Animation] = useState(false);
 
-    const language = isBrowser && location.pathname.indexOf('/zh-CN/') === 0 ? 'zh-CN' : 'en';
+    const language = isBrowser && location.pathname.indexOf('/en/') === 0 ?   'en': 'zh-CN';
     const dataSource = config?.[language];
 
     return (
@@ -62,7 +62,7 @@ export default function() {
                             <a href={dataSource.table.version[0].releaseUrl}>{dataSource.table.release}</a>
                         </td>
                         <td>
-                            <a href="https://github.com/DataLinkDC/dlink">{dataSource.table.source}</a>
+                        <a href= "https://github.com/DataLinkDC/dlink/archive/refs/tags/"+dataSource.table.version[0].title+".zip"}>{dataSource.table.source}</a>
                         </td>
                     </tr>
                 </table>

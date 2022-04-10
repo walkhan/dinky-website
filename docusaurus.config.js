@@ -1,6 +1,9 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const path = require('path');
+const versions = require('./versions.json');
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -16,14 +19,14 @@ const config = {
   organizationName: 'DataLinkDC', // Usually your GitHub org/user name.
   projectName: 'dinky', // Usually your repo name.
   i18n: {
-    defaultLocale: 'zh',
-    locales: ['zh', 'en-US'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans', 'en'],
     localeConfigs: {
-     zh: {
+     'zh-Hans': {
        label: "简体中文",
        direction: 'ltr',
      },
-     'en-US': {
+     'en': {
        label: "English",
        direction: 'ltr',
      },
@@ -85,8 +88,8 @@ const config = {
                 to: "/docs/next/intro",
               },
               {
-                label: "0.6",
-                to: "/docs/intro",
+                label: "0.6.1",
+                to: "/versioned_docs/version-0.6.1/intro",
               },
               {
                 label: "All Versions",
@@ -101,25 +104,25 @@ const config = {
             activeBaseRegex: `/download/`,
           },
           {
-            to: '/docs/developer_guide/debug',
+            to: '/docs/Next/developer_guide/debug',
             position: 'right',
             label: '开发者指南',
             items: [
               {
                 label: "如何参与",
-                to: "/docs/developer_guide/contribution/how_contribute",
+                to: "/docs/next/developer_guide/contribution/how_contribute",
               },
               {
                 label: "本地调试",
-                to: "/docs/developer_guide/local_debug",
+                to: "/docs/next/developer_guide/local_debug",
               },
               {
                 label: "远程调试",
-                to: "/docs/developer_guide/remote_debug",
+                to: "/docs/next/developer_guide/remote_debug",
               },
               {
                 label: "debug",
-                to: "/docs/developer_guide/debug",
+                to: "/docs/next/developer_guide/debug",
               },
             ],
           },
