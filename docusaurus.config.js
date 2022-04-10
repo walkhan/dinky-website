@@ -22,17 +22,17 @@ const config = {
   organizationName: 'DataLinkDC', // Usually your GitHub org/user name.
   projectName: 'dinky', // Usually your repo name.
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh-CN',
     locales: ['zh-CN', 'en'],
     localeConfigs: {
-      'zh-CN': {
-       label: "简体中文",
-       direction: 'ltr',
-     },
      'en': {
        label: "English",
        direction: 'ltr',
      },
+   'zh-CN': {
+        label: "简体中文",
+        direction: 'ltr',
+      },
     },
   },
   presets: [
@@ -44,7 +44,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/walkhan/dinky-website/tree/walkhan/master/',
+          editLocalizedFiles: true,
+          editUrl: 'https://github.com/walkhan/dinky-website/tree/walkhan/master/docs/',
         },
 //        blog: {
 //          showReadingTime: true,
