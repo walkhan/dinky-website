@@ -211,7 +211,7 @@ const config = {
           path: 'download',
           routeBasePath: 'download',
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            if (locale !== 'en') {
+            if (locale !== 'zh-Hans') {
               return `https://github.com/walkhan/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
             }
             return `https://github.com/walkhan/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
