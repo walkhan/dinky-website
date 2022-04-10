@@ -1,6 +1,12 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+
+const path = require('path');
+const versions = require('./versions.json');
+
+
+
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -16,14 +22,14 @@ const config = {
   organizationName: 'DataLinkDC', // Usually your GitHub org/user name.
   projectName: 'dinky', // Usually your repo name.
   i18n: {
-    defaultLocale: 'zh',
-    locales: ['zh', 'en-US'],
+    defaultLocale: 'en',
+    locales: ['zh-CN', 'en'],
     localeConfigs: {
-     zh: {
+      'zh-CN': {
        label: "简体中文",
        direction: 'ltr',
      },
-     'en-US': {
+     'en': {
        label: "English",
        direction: 'ltr',
      },
@@ -82,10 +88,11 @@ const config = {
             items: [
               {
                 label: "Next",
+                title: "Next",
                 to: "/docs/next/intro",
               },
               {
-                label: "0.6",
+                label: "0.6.1",
                 to: "/docs/intro",
               },
               {
