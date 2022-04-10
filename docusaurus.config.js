@@ -2,8 +2,6 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 
 
-const DefaultLocale = 'zh-CN';
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
@@ -19,17 +17,19 @@ const config = {
   organizationName: 'DataLinkDC', // Usually your GitHub org/user name.
   projectName: 'dinky', // Usually your repo name.
   i18n: {
-    defaultLocale: DefaultLocale,
+    defaultLocale: 'zh-CN',
     locales: ['zh-CN', 'en'],
     localeConfigs: {
      'en': {
        label: "English",
+       htmlLang: "en-US",
        direction: 'ltr',
      },
-   'zh-CN': {
-        label: "简体中文",
-        direction: 'ltr',
-      },
+     'zh-CN': {
+       label: "简体中文",
+       htmlLang: "zh-CN",
+       direction: 'ltr',
+        },
     },
   },
   presets: [
@@ -44,7 +44,7 @@ const config = {
           editLocalizedFiles: true,
           // highlight-start
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            if (locale !== DefaultLocale) {
+            if (locale !== 'zh-CN') {
               return `https://github.com/walkhan/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
             }
             return `https://github.com/walkhan/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
@@ -216,7 +216,7 @@ const config = {
           path: 'download',
           routeBasePath: 'download',
           editUrl: ({locale, versionDocsDirPath, docPath}) => {
-            if (locale !== DefaultLocale) {
+            if (locale !== 'zh-CN') {
               return `https://github.com/walkhan/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
             }
             return `https://github.com/walkhan/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
