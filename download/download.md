@@ -6,7 +6,7 @@ title: 下载
 
 ### 发行说明
 
-Dinky 版本的[发行说明](/download/release_notes/dinky-0.6.1)
+Dinky 版本的[发行说明](/download/dinky-0.6.1)
 
 ### 当前稳定版本 0.6.1
 

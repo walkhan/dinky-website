@@ -57,7 +57,7 @@ export default function Home() {
       const nav = document.getElementsByTagName('nav')[0];
       const classList = nav &&  nav.classList;
       if(!classList) return;
-      if (pathname === '/' || pathname === '/zh-CN/') {
+      if (pathname === '/' ) {
         classList.add('index-nav');
       } else {
         classList.remove('index-nav');
