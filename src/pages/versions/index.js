@@ -11,8 +11,20 @@ export default function() {
     const [p1Animation, setP1Animation] = useState(false);
     const [p2Animation, setP2Animation] = useState(false);
 
-    const language = isBrowser && location.pathname.indexOf('/en/') === 0 ?   'en': 'zh-CN';
+    const language = isBrowser && location.pathname.indexOf('/en/') === 0 ? 'en': 'zh-Hans';
     const dataSource = config?.[language];
+
+
+    const getTableList = (dataSource) => {
+        let list=null
+
+        if(dataSource.table.size !== 0){
+
+        }
+
+        return list
+    }
+
 
     return (
         <Layout>
@@ -21,7 +33,7 @@ export default function() {
                 <h3>{dataSource.newVersion}</h3>
                 <p>{dataSource.newVersionExplain}</p>
                 <table>
-                     {/* 每增加一个版本 需要在这里添加一组 tr  且需要更换下标值 */}
+                     {/* 此处只放最新版本  且需要更换下标值 */}
 
                     <tr>
                         <td>{dataSource.table.version[0].title}</td>
@@ -32,7 +44,7 @@ export default function() {
                             <a href={dataSource.table.version[0].releaseUrl}>{dataSource.table.release}</a>
                         </td>
                         <td>
-                            <a href="https://github.com/DataLinkDC/dlink">{dataSource.table.source}</a>
+                            <a href={"https://github.com/DataLinkDC/dlink/archive/refs/tags/"+dataSource.table.version[0].title+".zip"}>{dataSource.table.source}</a>
                         </td>
                     </tr>
                 </table>
@@ -51,15 +63,14 @@ export default function() {
                 <h3>{dataSource.passVersion}</h3>
                 <p>{dataSource.passVersionExplain}</p>
                 <table>
-                      {/* 每增加一个版本 需要在这里添加一组 tr  且需要更换下标值 */}
-            
-                    <tr>
-                        <td>{dataSource.table.version[0].title}</td>
+                      {/* 每增加一个版本 需要在这里添加一组 tr  此处只放历史版本  且需要更换下标值 */}
+                      <tr>
+                        <td>{dataSource.table.version[1].title}</td>
                         <td>
-                            <a href={dataSource.table.version[0].link}>{dataSource.table.doc}</a>
+                            <a href={dataSource.table.version[1].link}>{dataSource.table.doc}</a>
                         </td>
                         <td>
-                            <a href={dataSource.table.version[0].releaseUrl}>{dataSource.table.release}</a>
+                            <a href={dataSource.table.version[1].releaseUrl}>{dataSource.table.release}</a>
                         </td>
                         <td>
                         <a href= {"https://github.com/DataLinkDC/dlink/archive/refs/tags/"+dataSource.table.version[0].title+".zip"}>{dataSource.table.source}</a>

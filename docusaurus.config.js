@@ -41,7 +41,12 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           sidebarCollapsible: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/walkhan/dinky-website/tree/walkhan/master/',
+          editUrl: ({locale, versionDocsDirPath, docPath}) => {
+            if (locale !== 'zh-Hans') {
+              return `https://github.com/walkhan/dinky-website/tree/walkhan/master/i18n/${locale}/${docPath}`;
+            }
+            return `https://github.com/walkhan/dinky-website/tree/walkhan/master/${versionDocsDirPath}/${docPath}`;
+          },
         },
 //        blog: {
 //          showReadingTime: true,
