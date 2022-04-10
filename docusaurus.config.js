@@ -87,13 +87,17 @@ const config = {
                 label: "Next",
                 to: "/docs/next/intro",
               },
+             {
+               label: "0.6.1",
+               to: "/docs/intro",
+             },
               {
-                label: "0.6.1",
-                to: "/versioned_docs/version-0.6.1/intro",
-              },
+                  label: "0.6.0",
+                  to: "/docs/0.6.0/intro",
+                },
               {
                 label: "All Versions",
-                to: "/versions/",
+                to: "/versions",
               },
             ],
           },
