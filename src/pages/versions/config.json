@@ -1,5 +1,5 @@
 {
-    "zh-CN": {
+    "zh-Hans": {
       "title": "Dinky 所有文档版本",
       "newVersion": "这是当前的文档版本",
       "newVersionExplain": "在这里您可以找到当前发布的文档版本",
@@ -15,8 +15,13 @@
         "version": [
           {
             "title": "0.6.1",
-            "link": "/versioned_docs/version-0.6.1/intro",
+            "link": "/docs/intro",
             "releaseUrl": "https://github.com/DataLinkDC/dlink/releases/download/0.6.1/dlink-release-0.6.1.tar.gz"
+          },
+          {
+            "title": "0.6.0",
+            "link": "/docs/intro",
+            "releaseUrl": "https://github.com/DataLinkDC/dlink/releases/download/0.6.0/dlink-release-0.6.0tar.gz"
           }
         ]
       }
@@ -38,8 +43,13 @@
         "version": [
           {
             "title": "0.6.1",
-            "link": "/versioned_docs/version-0.6.1/intro",
+            "link": "/docs/intro",
             "releaseUrl": "https://github.com/DataLinkDC/dlink/releases/download/0.6.1/dlink-release-0.6.1.tar.gz"
+          },
+          {
+            "title": "0.6.0",
+            "link": "/docs/intro",
+            "releaseUrl": "https://github.com/DataLinkDC/dlink/releases/download/0.6.0/dlink-release-0.6.0.tar.gz"
           }
         ]
       }
